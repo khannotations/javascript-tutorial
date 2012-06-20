@@ -13,7 +13,6 @@ $(document).ready(function() {
 
   // This next line means 'run this function when the #next element is clicked'
   $("#next").click(function() {
-    console.log(curr_page);
     // If on the last page, do nothing
     if(curr_page === 8)
       return;
