@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px/20px "Lucida Grande", "Verdana", sans-serif;
+  background-color: #FAFAFA;
+}
+
+.container {
+  margin: auto;
+  width: 880px;
+  border: 1pt solid #DDD;
+  padding: 30px;
+  background-color: white;
+}
+/* The green notes */
+.note {
+  padding: 10px;
+  background-color: #DFF0D8;
+  border: 1pt solid #D6E9C6;
+  color: #468847;
+}
+
+.note:before {
+  content: "Note: ";
+  font-weight: bold;
+}
+
+/* Blocks of code */
+code {
+  font: monospace;
+  display: block;
+  background-color: #ddd;
+  border: 1pt solid #555;
+  padding: 10px;
+
+}
+/* The inline code */
+code.inline {
+  display: inline;
+  padding: 3px;
+  line-height: 24px;
+}
+/* Comments (used in the code blocks) */
+.comment {
+  color: #777;
+}
+
+/* The navigation bar at the bottom */
+#nav {
+  font-size: 0; /* Fix for inline-block */
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1pt solid #ddd;
+}
+
+#nav > div {
+  vertical-align: top;
+  padding: 10px 0;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+/* The prev and next buttons' containers */
+.nav {
+  width: 25%;
+  font-size: 14px;
+}
+/* The middle's container */
+#info {
+  width: 50%;
+  font-size: 0;
+}
+/* Each of the page nav blocks */
+.page-nav {
+  font-size: 12px;
+  line-height: 12px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #ccc;
+  border: 1pt solid #ddd;
+}
+.page-nav.selected {
+  border: 1pt solid red;
+  color: red;
+}
+.page-nav:hover {
+  color: black;
+  border: 1pt solid black;
+}
+
+/* Prev, next buttons */
+#prev {
+  background-color: #F85A48;
+}
+#next {
+  background-color: #5CEC00;
+}
+
+/* Optional? */
+strong {
+  font-weight: bold;
+}
+
+.monospace {
+  font-family: monospace;
+}
