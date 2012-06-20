@@ -2,15 +2,15 @@
 <head>
   <title>Learing javascript</title>
   <link rel="stylesheet" href="stylesheets/style.css" type="text/css"/>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="scripts/main.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="container">
     <div id="content">
       <div id="1" class="page">
-        <h1> Day 5: Learning Javascript </h1>
-        <p> 
+        <h1>Learning Javascript</h1>
+        <p>
           Today, we learned the basic syntax for <strong>Javascript</strong>, the language used to <strong>animate</strong> the web. There are slides available, but most of what we did isn't on them. I'll do a brief summary here.
         </p>
         <p><strong>It's very important that you type all the lines of code, not copy paste!</strong> You learn best by doing, not by reading. The more you type, the more you'll retain, I promise.
@@ -24,12 +24,12 @@
         <h1>Basic syntax</h1>
         <p>A <strong>variable</strong> is exactly what it was in algebra: something in which to store data. In javascript, we declare and store variables like this:</p>
         <code>
-          var a = 7; <span class="comment">// anything after 2 /'s is a <strong> comment </strong>and won't be executed.</span><br/>
+          var a = 7; <span class="comment">// anything after 2 /'s (on the same line) is a <strong> comment </strong>and won't be executed.</span><br/>
           <span class="comment">// so you can literally type anything!! a;lk ajd!</span>
 
         </code>
         <p>
-          The keyword <code class="inline">var</code> tells the browser to make a new variable called <code class="inline"> a</code>. The <code class="inline"> =</code> then tells the browser to set it to the value 7. Finally, the <code class="inline">;</code> tells the browser that the line of code is over -- <strong>All lines should end in semicolons!!</strong>
+          The keyword <code class="inline">var</code> tells the browser to make a new variable called <code class="inline"> a</code>. The <code class="inline"> =</code> then tells the browser to set it to the value 7. Finally, the <code class="inline">;</code> tells the browser that the line of code is over -- <strong>All statements should end in semicolons!!</strong>
         </p>
         <p>
           Then how come it returns <code class="inline"> undefined</code>? We'll get to that later. You can check what any variable is just by typing it:
@@ -75,7 +75,7 @@
           }<br/>
         </code>
         <p>
-          This is correct syntax, but won't work in the console (something about an unexpected '('). We'll fix it in a minute, but first let's analyze what we typed. <code class="inline"> function</code> tells the browser that we're declaring a function. Everything enclosed in <code class="inline"> {}</code> is a part of the function: they tell the engine where the function starts and ends. <code class="inline"> (a, b)</code> defines the <strong>input</strong> -- in this function, we're taking two pieces of input, called <code class="inline"> a</code> and <code class="inline"> b</code>. Finally, the <code class="inline"> return</code> tells the function what to <strong> output</strong>, in this case, the sum of a and b.
+          This is correct syntax, but won't work in the console (something about an unexpected '('). This is just because the console doesn't like multiple line statements, and we'll fix it in a minute, but first let's analyze what we typed. <code class="inline"> function</code> tells the browser that we're declaring a function. Everything enclosed in <code class="inline"> {}</code> is a part of the function: they tell the engine where the function starts and ends. <code class="inline"> (a, b)</code> defines the <strong>input</strong> -- in this function, we're taking two pieces of input, called <code class="inline"> a</code> and <code class="inline"> b</code>. Finally, the <code class="inline"> return</code> tells the function what to <strong> output</strong>, in this case, the sum of a and b.
         </p>
       </div>
       <div id="5" class="page">
@@ -98,7 +98,7 @@
           Notice the difference between checking what the function is (the second line) and using it. Now, what do you think you'd get by typing:
         </p>
         <code>
-          typeof func ;<span class="comment">// ?</span><br/> 
+          typeof func;<span class="comment">// ?</span><br/> 
           <span class="comment">// How about this one:</span><br/>
           alert("howdy soldier!");
         </code>
@@ -161,7 +161,7 @@
         <p>I'd hope so. Unfortunately, jQuery doesn't come built-in with the browser like javascript does. If you look at this page's source, you'll notice this in the head:
         </p>
         <code>
-          &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"&gt;&lt;/script&gt;<br/>
+          &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;<br/>
         </code>
         <p>
           All you need to do is copy that into your own pages, and you have jQuery! To write javascript files (you don't want to be typing into the console all the time), make that <code class="inline"> scripts</code> folder in your project that we always talk about and never use, and create a main.js file in there.
@@ -177,7 +177,7 @@
           &lt;html&gt;<br/>
           &lt;head&gt;<br/>
           <span class="comment">&lt;!-- include jQuery -- &gt;</span><Br/>
-            &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"&gt;&lt;/script&gt;<br/>
+            &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;<br/>
             <span class="comment">&lt;!-- THEN include your own script --></span><br/>
             &lt;script src="scripts/main.js"&gt;&lt;/script&gt;<br/>
           
@@ -199,7 +199,7 @@
 
         </code>
         <p>
-          And that's it! Open up index.html in a browser and watch that text grow (the <code class="inline">1000</code> is the number of <strong>milliseconds</strong> the animation will take)! 
+          And that's it! Open up index.html in a browser and watch that text grow (the <code class="inline">1000</code> is the number of <strong>milliseconds</strong> the animation will take). In JavaScript, time is always in milleseconds.
         </p>
         <p>
           Now you can use jQuery, CSS and HTML -- you <strong>know</strong> everything this class has to teach. All that's left is review, learning more functions and practice! 
@@ -213,23 +213,23 @@
 
 
     </div>
-
-    <div id="nav">
-      <div id="prev" class="nav"><- Previous</div>
-      <div id="info">
-        <div class="page-nav" target="1">1</div>
-        <div class="page-nav" target="2">2</div>
-        <div class="page-nav" target="3">3</div>
-        <div class="page-nav" target="4">4</div>
-        <div class="page-nav" target="5">5</div>
-        <div class="page-nav" target="6">6</div>
-        <div class="page-nav" target="7">7</div>
-        <div class="page-nav" target="8">8</div>
-      </div>
-      <div id="next" class="nav">Next -></div>
-    </div>
   </div>
 
+  <div id="nav">
+    <div id="prev" class="nav"><- Previous</div>
+    <div id="fake_prev" style="width:20%;" ></div>
+    <div id="info">
+      <div class="page-nav" target="1">1</div>
+      <div class="page-nav" target="2">2</div>
+      <div class="page-nav" target="3">3</div>
+      <div class="page-nav" target="4">4</div>
+      <div class="page-nav" target="5">5</div>
+      <div class="page-nav" target="6">6</div>
+      <div class="page-nav" target="7">7</div>
+      <div class="page-nav" target="8">8</div>
+    </div>
+    <div id="next" class="nav">Next -></div>
+  </div>
 
 
 </body>
