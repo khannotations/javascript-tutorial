@@ -13,7 +13,6 @@ $(document).ready(function() {
 
   // This next line means 'run this function when the #next element is clicked'
   $("#next").click(function() {
-    console.log(curr_page);
     // If on the last page, do nothing
     if(curr_page === 8)
       return;
@@ -37,17 +36,23 @@ $(document).ready(function() {
 
   change_page = function(curr_page, new_page) {
     // If going to the first page, hide the "prev" button
-    if(new_page === 1)
+    if(new_page === 1) {
       $("#prev").hide();
+      $("#fake_prev").show();
+    }
     // Otherwise show it
-    else
+    else {
+      $("#fake_prev").hide();
       $("#prev").show();
+    }
     // If going to page 8 (the last page), hide the "next" button
-    if(new_page === 8)
+    if(new_page === 8) {
       $("#next").hide();
+    }
     // Otherwise show it
-    else
+    else {
       $("#next").show();
+    }
 
     $(".page-nav.selected").removeClass("selected");
     // Fade out current page
